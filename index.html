@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>demo</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <div class="container">
+      <div id="loginContainer">
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="exampleInputEmail1">Username</label>
+            <input
+              type="email"
+              class="form-control"
+              id="loginUsername"
+              placeholder="Username"
+              name="username"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputEmail1">Hobbies</label>
+            <input
+              type="text"
+              class="form-control"
+              id="loginHobbies"
+              placeholder="hobbies"
+              name="hobbies"
+            />
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              id="loginPassword"
+              placeholder="Password"
+            />
+          </div>
+          <button type="submit" class="btn btn-primary" id="btnLogin">
+            Login or register
+          </button>
+        </form>
+      </div>
+
+      <div id="page">
+        <p id="loggedUsername">Username</p>
+
+        <h1>Add Users</h1>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Username</th>
+              <th scope="col">Password</th>
+              <th scope="col">Horbies</th>
+              <th>Select</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>sleep</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>sleep</td>
+            </tr>
+            <tr></tr>
+          </tbody>
+        </table>
+        <div class="flex-row">
+          <button
+            type="button"
+            class="btn btn-primary"
+            data-toggle="modal"
+            data-target="#registerModal"
+          >
+            Register
+          </button>
+          <button type="button" class="btn btn-danger" id="removeBtn">
+            Remove
+          </button>
+          <button type="button" class="btn btn-success" id="btnLogout">
+            Login
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="registerModal"
+      tabindex="-1"
+      role="dialog"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Register new user
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="registerForm">
+              <div class="form-group">
+                <label for="exampleInputEmail1">Username</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerUsername"
+                  placeholder="Username"
+                />
+              </div>
+              <div class="form-group">
+                <label for="">Hobbies</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="registerHobbies"
+                  placeholder="hobbies"
+                />
+              </div>
+              <div class="form-group">
+                <label>Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="registerPassword"
+                  placeholder="Password"
+                />
+              </div>
+              <button type="submit" class="btn btn-primary" id="btnRegister">
+                register
+              </button>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+    <script src="index.js"></script>
+  </body>
+</html>
